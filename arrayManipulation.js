@@ -10,3 +10,19 @@ function processArray(array) {
 
   return newArray;
 }
+
+//Task 2
+//The argument numbers is processed by the processArray function
+function formatArrayStrings(strings, numbers) {
+  const newArray = strings.map((str, index) => {
+    const num = numbers[index];
+    if (num % 2 === 0) {
+      return str.toUpperCase();
+    } else {
+      return str.toLowerCase();
+    }
+  });
+
+  return newArray;
+}
+
